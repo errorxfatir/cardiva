@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cardiva</title>
+    <link rel="icon" href="/images/cardia-removebg.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="#"><img src="/images/cardia-removebg.png" alt="Cardiva Logo" width="50"></a>
+        <a href="index.html">Home</a>
+        <a href="#">My Plans</a>
+        <a href="login.html">Login</a>
+    </nav>
+    </header>
+    <section id="hero">
+
+        <h1> Your Personal Cardio Coach, Powered by AI </h1>
+        <p> Create personalized cardio plans in seconds and train with purpose.</p>
+        <a href="#form">Generate my Plan</a>
+
+    </section>
+    <section id="form">
+        <h2>Build Your Plan</h2>
+        <form>
+            <label for="FullName">Full Name:</label>
+            <br>
+            <input type="text" id="FullName" name="FullName" placeholder="Full Name" required>
+            <br>
+            <label for="Age">Age:</label>
+            <br>
+            <input type="number" id="Age" name="Age" placeholder="Age" required>
+            <br>
+            <label for="Gender">Gender:</label> 
+            <select name="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Fitness Level:</legend>
+                <input type="radio" id="beginner" name="fitnesslevel" value="Beginner"  required> Beginner
+                <input type="radio" id="intermedia" name="fitnesslevel" value="Intermediate" required> Intermediate
+                <input type="radio" id="advanced" name="fitnesslevel" value="Advanced" required> Advanced
+            </fieldset>
+            <br>
+            <label for="Goal">Goal:</label>
+            <select id="Goal" name="Goal">
+                <option value="Lose Weight" selected>Lose Weight</option>
+                <option value="Build Stamina">Build Stamina</option>
+                <option value="Stay Active">Stay Active</option>
+                <option value="Train For Event">Train For Event</option>
+            </select>
+            <br>
+            <label for="Days">Days per Week:</label>
+            <input type="number" name="Days" placeholder="Days per Week" required>
+            <br>
+            <label for="Duration">Workout Duration:</label>
+            <br>
+            <select id="Duration" name="Duration">
+                <option value="15" selected>15 Minutes</option>
+                <option value="30">30 Minutes</option>
+                <option value="45">45 Minutes</option>
+                <option value="60">60 Minutes</option>
+            </select>
+            <br>
+            <label for="Injuries">Injuries or Limitations:</label>
+            <textarea id="Injuries" name="Injuries" placeholder="List any injuries or limitations (optional)"></textarea>
+            <br>
+            <label for="describegoal">Describe Your Goal in your Own Words:</label>
+            <textarea id="describegoal" name="describegoal" placeholder="Describe your goal in your own words (optional)"></textarea>
+            <br>
+            <button type="submit">Generate My Plan</button>
+
+
+
+        </form>
+    </section>
+
+    <section id="output">
+        <h2>Your Cardio Plan</h2>
+        <p>Here is your personalized cardio plan based on the information you provided:</p>
+        <div id="plan-result">
+
+            
+        </div>
+
+
+    </section>
+
+    <section id="saved-plans">
+        <h2>My Saved Plans</h2>
+        <p>Access your previously generated cardio plans here:</p>
+        <div id="plans-grid">
+        <div class="plan-card">
+            <h3>Weight Loss Plan</h3>
+            <p> Created on: 2023-10-01 </p>
+            <button>View Plan</button>
+        </div>
+    <div class="plan-card">
+            <h3>Build Stamina Plan</h3>
+            <p> Created on: 2023-10-01 </p>
+            <button>View Plan</button>
+        </div>
+         <div class="plan-card">
+            <h3>Stay Active Plan</h3>
+            <p> Created on: 2023-10-01 </p>
+            <button>View Plan</button>
+        </div>
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy; 2026 Cardiva. All rights reserved.</p> 
+         <a href="index.html">Home</a>
+        <a href="#">My Plans</a>
+        <a href="login.html">Login</a>   
+    </footer>
+</body>
+
+</html>
