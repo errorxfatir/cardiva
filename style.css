@@ -64,3 +64,86 @@ body {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.14);
     transform: scale(1.05);
 }
+
+.highlight-header {
+    color: #ff6b6b;
+    background: linear-gradient(90deg,#ff6b6b, #a855f7, #4d9fff, #ff6b6b);
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#form{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-height: 80vh;
+
+}
+
+.form-left {
+    width: 45%;
+    background: #0a0a0a ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+.form-right {
+    width: 55%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    overflow-y: auto
+}
+.form-heading {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+.form-text {
+    font-size: 18px;
+    color: #9C9C9C;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+/* Hero Badge and dot currently not using but can be used for future updates 
+
+.hero-badge {
+    margin-bottom: 30px;
+  padding: 6px 12px;
+  background-color: #000000;
+   border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #9C9C9C;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 9999px;
+}
+.badge-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse 2s infinite;
+}
+
+*/
+
