@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -85,6 +86,8 @@ body {
     }
 }
 
+/* Form Section */
+
 #form{
     display: flex;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -122,6 +125,20 @@ body {
     margin-bottom: 40px;
     line-height: 1.1;
 }
+ 
+input,textarea,select,.submit-button,fieldset {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+
+
 
 /* Hero Badge and dot currently not using but can be used for future updates 
 
